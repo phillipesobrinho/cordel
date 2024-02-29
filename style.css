@@ -1,7 +1,18 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Passion+One:wght@400;700;900&family=Roboto:wght@100&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Passion+One:wght@400;700;900&family=Roboto:wght@100&family=Sriracha&display=swap');
+
+
+:root{
+    --font1:Verdana;
+--font2:@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Passion+One:wght@400;700;900&family=Roboto:wght@100&family=Sriracha&display=swap');
+--font3:@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Passion+One:wght@400;700;900&family=Roboto:wght@100&family=Sriracha&display=swap');
+}
 *{
 margin: 0px;
 padding: 0px;
+font-size: 1em;
 }
 
 
@@ -9,6 +20,7 @@ padding: 0px;
 html, body{
 min-height: 100vh;
 background-color: darkgray;
+font-family: var(--font1)
 
 }
 
@@ -17,6 +29,8 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    
+    
 
 }
 
@@ -24,6 +38,8 @@ header >h1 {
 
 padding-top:  50px;
 font-variant: small-caps;
+font-size: 10vh;
+font-family: var(--font2);
 
 
 }
@@ -42,4 +58,61 @@ a{
 
 a :hover{
     text-decoration: underline;
+}
+
+section{
+
+    padding-top: 10vh; ;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 5vh;
+    font-family: var(--font3);
+
+}
+
+section.normal{
+background-color: white;
+color: black;
+
+}
+
+
+section.image{
+
+    background-color: aliceblue;
+    color:black;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+   background-attachment: fixed;
+}
+ section >p{
+
+    padding-bottom: 2em;
+ }
+section.imagem > p{
+
+    background-color: rgb(180, 176, 176);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    
+}
+
+section#img01{
+background-image: url("../background001.jpg");
+background-position: right center;
+background-size: cover;
+}
+
+section#img02{
+background-image: url("../background002.jpg");
+background-size: cover;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: black;
 }
